@@ -1,0 +1,36 @@
+{
+    "version": "1",
+    "inputs": [
+        {
+            "name": "instruction",
+            "description": "The prompt to provide to the model.",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "temperature",
+            "description": "Temperature setting for the model.",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 1
+        },
+        {
+            "name": "max_new_tokens",
+            "description": "Maximum tokens which are outputted by the model.",
+            "type": "number",
+            "required": false,
+            "min": 100
+        }
+    ],
+    "examples": [
+        {
+            "inputs": {
+                "instruction": "Tell me about AI"
+            },
+            "output": {
+                "outputs": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n    ### Instruction:\n    Tell me about AI\n\n    ### Response:\n     AI is a field that emphasizes intelligence, in that it is used to understand and act in a wide range of situations, from simple to complex problems. AI is used in a number of different fields, from natural language processing to artificial intelligence. AI can be used in a variety of applications, from image recognition to machine learning, and from data science to machine learning. AI is used in a number of different fields, from natural language processing to artificial intelligence. AI can be used in a variety of applications, from image recognition to machine learning, and from data science to machine learning. AI is a field that emphasizes intelligence, in that it is used to understand and act in a wide range of situations, from simple to complex problems.<|endoftext|>"
+            }
+        }
+    ]
+}
